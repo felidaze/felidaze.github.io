@@ -639,8 +639,8 @@ background-size: cover;}}
 /*SQUISHY IMAGE*/
 .funnyimage {
     position: absolute;
-    right: 5vmax;
-    margin-top: -7px;
+    right: 3vmax;
+    margin-top: -50px;
     z-index: 9999;
     transition: 0.1s;
 }
