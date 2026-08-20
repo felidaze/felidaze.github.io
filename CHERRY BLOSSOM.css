@@ -1,0 +1,555 @@
+/*CSS BY FELID #114852*/
+/*MOBILE BACKGROUND FIX BY TAWNY #251887*/
+
+/*PIXEL ART CREDIT:*/
+/*https://www.deviantart.com/violetcascade/art/F2u-Pretty-Flowers-682136868*/
+/*https://www.deviantart.com/ho-ne-y/art/f2u-sakura-829868189*/
+
+@import 
+    url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import 
+    url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+:root {
+    --pink1: #ff9bad;
+    --pink2: #C36374;
+    --pink3: #642323;
+    --black1: #0e040c;
+    --black2: #310d10;
+    --light1: #FFCCE3;
+    --gradient1: linear-gradient(to right,#0e040c,#310d10,#0e040c);
+    --text1: #fff0f3;
+    --text2: #ffc5cf;
+    --border1: solid 2px #C36374;
+    --border2: solid 2px #842e2e;
+    --bar1: repeating-linear-gradient(45deg,#b15162,#b15162 10px,#cc5f73 10px,#cc5f73 20px);}
+
+/*BACKGROUND + BODY TEXT*/ body {
+    background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossombg.jpg) center center fixed;
+    background-size: 100%;
+    font-family: 'League Spartan';
+    color: var(--text1);
+    font-size: 15px;
+}
+
+/*LINKS*/ a {
+    color: var(--text2) !important;
+    transition: 0.2s !important;
+    font-weight: normal !important;
+}
+a:hover {
+    color: var(--pink1) !important;
+}
+
+
+
+/*MAIN PANEL*/ .container.main {
+    background: linear-gradient(to right,rgba(34,0,0,0.8),rgba(47,3,3,0.7),rgba(34,0,0,0.8));
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/*MAIN PANEL RIGHT SIDE*/ .col-md-9 {
+    background: none;
+    border-right: none;
+}
+
+/*TOP BAR*/ .topbar {
+    background: var(--black1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: var(--border1);
+    border-top: none;
+    font-size: 15px;
+}
+
+
+
+/*NAVBAR*/ .navbar {
+    background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossompattern.png") repeat center center,
+        linear-gradient(to right,#0e040c,#310d10,#0e040c);
+    border-radius: 5px;
+    border: var(--border1);
+}
+.navbar li a {
+    color: var(--pink1) !important;
+    text-shadow: 2px 2px 0px #000;
+    border-bottom: none;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.1);
+}
+
+.navbar li:nth-child(1) a {color: #ff97aa !important}
+.navbar li:nth-child(2) a {color: #ffa9b9 !important}
+.navbar li:nth-child(3) a {color: #ffb1c0 !important}
+.navbar li:nth-child(4) a {color: #ffc0cc !important}
+.navbar li:nth-child(5) a {color: #ffd4dc !important}
+.navbar li:nth-child(6) a {color: #ffe5ea !important}
+.navbar li:nth-child(7) a {color: #fff1f4 !important}
+.navbar li:nth-child(8) a {color: #fff8f8 !important}
+
+/*LIODEN LOGO REPLACER*/ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/css%20pink%20logo.png);
+    transition: 0.2s;
+}
+/*HOVER*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*BREADCRUMB*/ .breadcrumb {
+    background: var(--black1);
+    border: var(--border2);
+    font-size: 15px;
+}   
+.breadcrumb .active {
+    color: var(--text1);
+}
+
+.active::after {
+    content: " 🌸"
+}
+
+/*CSS CREDIT*/ .breadcrumb::after {
+    content: "CSS by Felid (#114852)";
+    color: var(--text2);
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+    }
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {.breadcrumb::after {right: 20%}}
+@media only screen and (max-width: 991px) and (min-width: 768px)  {.breadcrumb::after {right: 20%}}
+@media only screen and (max-width: 767px) {.breadcrumb::after {right: 22%}}
+
+
+
+/*BOOKMARK*/ input.floatright {
+    background: var(--pink2) !important;
+    color: var(--black1) !important;
+    border: none !important;
+    text-shadow: none !important;
+    transition: 0.2s;
+}
+input.floatright:hover {
+    background: var(--pink1) !important;
+}
+
+
+
+/*ALERTS*/ .alert, .alert-warning, .alert-danger {
+    background: var(--black1);
+    color: var(--text1);
+    border: var(--border1);
+}
+
+
+
+/*BIG HEADER*/ h1 {
+    color: var(--pink1);
+    text-shadow: 4px 4px 0px #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Caveat;
+}
+/*SMALL HEADER*/ h3 {
+    color: var(--pink2) !important;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+
+/*RIGHT NAVBAR*/
+/*HEADERS*/
+.sidebar h3 {
+    color: var(--pink1) !important;
+    text-shadow: 2px 2px 0px #000;
+    font-size: 24px;
+    transition: 0.2s;
+    font-family: Caveat;
+}
+.sidebar h3:hover {
+    color: var(--text1) !important;
+}
+/*PANELS*/ .panel {
+    background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossompattern.png") repeat center center,
+        linear-gradient(45deg,#0e040c,#310d10) !important;
+    box-shadow: none !important;
+    border: var(--border2) !important;
+}
+/*PANEL TEXT*/ .panel-body {
+    color: var(--text1) !important;
+    font-size: 14px;
+}
+
+
+
+/*ENERGY BARS*/
+/*BG*/ .progress {
+    background: var(--black1);
+    border-radius: 5px !important;
+}
+/*TEXT*/ .progress div {
+    color: var(--text2);
+    text-shadow: 0px 0px 3px #000;
+    font-size: 13px;
+}
+/*IMPRESSION*/ .progress-bar {
+    background: var(--bar1);
+}
+/*ENERGY*/ .progress-bar-warning {
+    background: var(--bar1);
+}
+/*HUNGER*/ .progress-bar-danger {
+    background: var(--bar1);
+}
+/*EXPERIENCE*/ .progress-bar-success {
+    background: var(--bar1);
+}
+
+
+
+/*SWITCH ACCOUNT BUTTON*/ button.button {
+    background: var(--black1);
+    color: var(--text2);
+    text-shadow: none;
+    border: var(--border1);
+    transition: 0.2s;
+}
+button.button:hover {
+    background: var(--black1);
+    color: var(--text2);
+    text-shadow: none;
+    border: var(--border1);
+    transform: scale(1.05) !important;
+}
+
+/*BUGBOX BUTTON*/ a.btn.btn-default.button {
+    background: var(--black1);
+    font-weight: bold !important;
+    color: var(--text2) !important;
+    text-shadow: none;
+    border: var(--border1);
+    text-shadow: none;
+}
+
+a.btn.btn-default.button:hover {
+    transform: scale(1.05) !important;
+}
+
+
+
+/*CHAT*/
+/*BORDER*/ div#chatMessageContainer {
+    border: var(--border1);
+}
+/*CHANNEL BUTTON*/ button#label_currentChannel {
+    background: var(--black1) !important;
+    color: var(--text1) !important;
+    border: var(--border2) !important;
+}
+/*ODD*/ .s-chat-message:nth-child(odd) {
+    background: var(--black1) !important;
+    color: var(--text1) !important;
+    border: none !important;
+}
+/*EVEN*/ .s-chat-message:nth-child(even) {
+    background: var(--black2) !important;
+    color: var(--text1) !important;
+    border: none !important;
+}
+/*PINNED*/ .s-chat-message__pinned {
+    background: var(--black1) !important;
+    color: var(--text2) !important;
+    border-bottom: var(--border2) !important;
+}
+/*TIMESTAMPS*/ .s-chat-message_timestamp {
+    color: var(--pink1) !important;
+}
+
+
+
+/*LION INFO TABLE*/
+/*PANEL*/ .table {
+    background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossompattern.png") repeat center center,
+        linear-gradient(#0e040c,#310d10) !important;
+    border-radius: 5px !important;
+    border: var(--border1);
+    border-collapse: separate;
+}
+/*HEADERS*/ .top, .bottom, th {
+    background: var(--black1) !important;
+    border-radius: 5px !important;
+}
+
+/*BOTTOM OF PLAYER BOX*/ .right_odd {
+    background: var(--black1) !important}
+
+/*NO UNDERLINE*/ td.bottom a {text-decoration: none !important;}
+/*LEFT*/ .inner-table .left {
+    background: var(--pink3) !important;
+}
+/*RIGHT*/ .inner-table .right {
+    background: var(--pink2) !important;
+}
+/*LION IMAGE*/ div#lion_image {
+    border-radius: 5px !important;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 9px;
+    transition: 0.2s;
+    border: var(--border2);
+}
+
+div#lion_image::after{
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossompixel2.png');
+    position: absolute;
+    left: 180px;
+    top: 20px;
+}
+
+
+/*PLAYER ICON*/ table#player img {
+	border-radius: 5px !important;
+	overflow: hidden
+}
+
+
+/*CAVES*/
+/*BG*/ .cave-grid, .mound-grid {
+    background: var(--black1);
+    border: var(--border2) !important;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+/*HOVER*/ .cave-grid:hover, .mound-grid:hover {
+    background: var(--black2);
+    transform: scale(1.03);
+}
+/*UNSORTED IMG*/ img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/cherryblossombase.png') !important;
+    width: 80px;}
+/*NESTING IMG*/ img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_base_azalea.png') !important;
+    width: 80px;}
+/*OVERVIEW IMG*/ img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_peachbase.png') !important;
+    width: 80px}
+/*CAVES IMG*/ img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://images.unsplash.com/photo-1555231955-348aa2312e19?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    object-fit: cover;
+    object-position: bottom;
+    height: 90px;}
+/*MOUNDS IMG*/ .mound-grid img {display: none;}
+
+
+
+/*FAPA*/ .feature {
+    background: var(--black1) !important;
+    border: var(--border1) !important;
+}
+/*SPARRING*/ .right_odd {
+    background: var(--black1) !important;
+}
+
+
+
+/*DYNASTY*/ div.left {
+    background: var(--black1);
+    border: var(--border2);
+    transition: 0.2s;
+}
+/*DYNASTY HOVER*/ div.left:hover {
+    background: var(--black2);
+    transform: scale(1.03);
+}
+/*MAKE DYNASTY ONE ROW*/ .dynastylist {width: 20%;}
+
+
+
+/*EDIT YOUR DETAILS*/
+/*LEFT*/ .table .left {
+    background: var(--black1);
+}
+/*RIGHT*/ input, select, textarea {
+	background: var(--pink3) !important;
+    color: var(--text1) !important;
+	border: none !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important
+}
+
+
+
+/*SITE FOOTER*/ div.col-xs-10 {
+    color: var(--black1);
+}
+
+
+/*COMMENT BOX*/
+/*MAIN*/ #commentBox {
+    background: var(--black1);
+    border: var(--border1) !important;
+    scrollbar-color: var(--pink1) var(--pink3);
+}
+/*COMMENTS, EVEN*/ div.comment:nth-child(even) {
+    background: var(--black2) !important;
+    border-bottom: var(--border2);
+    border-width: 1px;
+}
+/*COMMENTS, ODD*/ div.comment:nth-child(odd) {
+    background: var(--black1) !important;
+    border-bottom: var(--border2);
+    border-width: 1px;
+}
+/*MAKE COMMENT BAR*/ div#makeComment {
+    background: var(--black1);
+    border: var(--border2);
+    border-radius: 5px;
+}
+/*INPUT*/ input#comment {
+    background: var(--pink3) !important;
+}
+/*POST BUTTON*/ input#postComment {
+    background: var(--pink3) !important;
+}
+/*TIMESTAMPS*/ small.text-muted {
+    color: var(--pink1);
+}
+/*X BUTTON*/ input[type="button"].bad {
+    background: var(--pink3) !important;
+    color: var(--pink1) !important;
+    text-shadow: none;
+}
+/*HEADER*/ #commentBox::before {
+    content: "COMMENTS";
+    background: var(--black1);
+    border-bottom: var(--border1);
+    color: var(--text2);
+    font-family: Caveat;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding-top: 5px;
+    top: 0px;
+}
+
+
+/*HIDE WISHLIST/GIFT/ETC ICONS*/
+img[src$="icon_den_wishlist.png"] {display: none;}
+img[src$="icon_den_friend.png"] {display: none;}
+img[src$="icon_den_message.png"] {display: none;}
+img[src$="icon_den_gift.png"] {display: none;}
+img[src$="icon_den_trade.png"] {display: none;}
+img[src$="icon_den_viewtrade.png"] {display: none;}
+img[src$="icon_den_block.png"] {display: none;}
+/*HIDDEN :|: DIVIDERS*/ span.text-muted {visibility: hidden;margin: -5px;}
+/*REMOVE PLAYER BOX DIVIDER*/ tbody hr {display:none;}
+
+
+
+/* mobile background - fixed image stretching code by tawnycollar #251887 */
+@media screen and (max-width: 768px){
+body {
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossombg.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
+html:not(.nolayout) body:after {
+content:"";
+position:fixed; 
+top:0;
+height:160vh;
+left:0;
+right:0;
+z-index:-1; 
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/cherryblossombg.jpg") center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}}
+
+
+
+/*BOX CONTAINER*/ .boxcontainer {
+	background: none;
+	height: auto;
+	padding: 10px;
+    border: none;
+    border-radius: 5px;
+	justify-content: center;
+	display: flex
+}
+
+/*BOX SPECIFIC ADJUSTMENTS*/
+/*DIVIDER*/ .boxcontainer hr {
+    margin: 5px;
+    border-top: var(--border2);
+    border-style: dashed;
+    width: 70%;}
+/*H1*/ .boxcontainer h1 {
+    font-size: 35px !important; 
+    margin: 0px;
+    color: var(--text2) !important;
+    font-family: Caveat;}
+/*H2*/ .boxcontainer h2 {
+    font-size: 25px !important; 
+    color: var(--text2) !important;
+    font-family: Caveat;
+    margin: 0px;}
+/*H3*/ .boxcontainer h3 {
+    color: var(--text2) !important;
+    font-family: Caveat;
+    font-size: 20px !important;
+    margin: 0px;}
+
+/*BOX 1*/ .box1 {
+	float: left;
+	background: var(--black1);
+	color: var(--text1);
+	padding: 10px;
+	border: var(--border1);
+	border-radius: 5px;
+	margin: 10px;
+    margin-bottom: 0px;
+	height: 100px;
+	width: 70%;
+	overflow: auto;
+    scrollbar-color: var(--pink1) var(--pink3);
+}
+
+/*BOX 2*/ .box2 {
+	float: left;
+	background: var(--black1);
+	color: var(--text1);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	height: 200px;
+	width: 70%;
+	overflow: scroll;
+    border: var(--border1);
+    scrollbar-color: var(--pink1) var(--pink3);
+}
+/*BOX 3*/ .box3 {
+	float: left;
+	background: var(--black1);
+	color: var(--text1);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	height: 200px;
+	width: 40%;
+	overflow: auto;
+    border: var(--border1);
+    scrollbar-color: var(--pink1) var(--pink3);
+}
