@@ -1,0 +1,661 @@
+/*CSS BY FELID #114852*/
+/*MOBILE BACKGROUND FIX BY TAWNY #251887*/
+/*FIREFLIES BY STELLA #185560*/
+
+@import 
+    url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import 
+    url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+
+/*BACKGROUND + BODY TEXT*/ body {
+    background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealbg.jpg) center center fixed;
+    background-size: 100%;
+    font-family: 'League Spartan';
+    color: var(--light1);
+    font-size: 15px;
+}
+
+/* mobile background - fixed image stretching code by tawnycollar #251887 */
+@media screen and (max-width: 768px){
+body {
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealbg.jpg") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+html:not(.nolayout) body:after {content:"";position:fixed; top:0;height:160vh;left:0;right:0;z-index:-1; 
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealbg.jpg") center center;
+-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}}
+
+:root {
+    --black1: #02070A;
+    --black2: #062031;
+    --black3: #073140;
+    --teal1: #12a7aa;
+    --teal2: #0e7893;
+    --teal3: #093d64;
+    --light1: #e6fffc;
+    --light2: #bff5ff;
+    --light3: #85d5ee;
+    --border1: none;
+    --glow1: 0px 0px 5px #0d819e;
+    --glow2: 0px 0px 5px rgba(14,129,158,0.50);
+    --glow3: 0px 0px 5px #0bbcc0;
+    --glow4: 0px 0px 5px rgba(11,189,192,0.50);
+    --gradient1: linear-gradient(to right,#02070A,#072b42,#02070A);
+    --gradient2: linear-gradient(to right,#072b42,#093d64,#072b42);
+}
+
+/*LINKS*/ a {
+    color: var(--light3) !important;
+    transition: 0.2s !important;
+    font-weight: normal !important;
+}
+a:hover {
+    color: var(--light2) !important;
+}
+
+
+
+/*MAIN PANEL*/ .container.main {
+    background: linear-gradient(to right,rgba(15,129,158,0.40),rgba(28,183,156,0.4),rgba(15,129,158,0.40));
+    border-radius: 5px;
+    box-shadow: var(--glow1);
+}
+
+/*MAIN PANEL RIGHT SIDE*/ .col-md-9 {
+    background: none;
+    border-right: none;
+}
+
+/*TOP BAR*/ .topbar {
+    background: var(--black1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: var(--border1);
+    border-top: none;
+    box-shadow: var(--glow1);
+    font-size: 15px;
+}
+
+
+
+/*NAVBAR*/ .navbar {
+    background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealpattern.png) repeat center center, var(--gradient1);
+    box-shadow: var(--glow1);
+    border: var(--border1);
+    border-radius: 5px;
+}
+.navbar li a {
+    color: var(--light2) !important;
+    text-shadow: var(--glow1);
+    border-bottom: none;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.1);
+}
+
+
+
+/*LIODEN LOGO REPLACER*/ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/teallogo.png);
+    transition: 0.2s;
+    filter: drop-shadow(0px 0px 5px #000);
+}
+/*HOVER*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*BREADCRUMB*/ .breadcrumb {
+    background: var(--black2);
+    border: var(--border1);
+    box-shadow: var(--glow4);
+    font-size: 15px;
+}   
+.breadcrumb .active {
+    color: var(--light1);
+}
+
+/*CSS CREDIT*/ .breadcrumb::after {
+    content: "CSS by Felid (#114852)";
+    color: var(--light1);
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+    }
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {.breadcrumb::after {right: 20%}}
+@media only screen and (max-width: 991px) and (min-width: 768px)  {.breadcrumb::after {right: 20%}}
+@media only screen and (max-width: 767px) {.breadcrumb::after {right: 22%}}
+
+
+
+
+/*BOOKMARK*/ input.floatright {
+    background: var(--teal3) !important;
+    color: var(--light3) !important;
+    border: none !important;
+    text-shadow: none !important;
+    transition: 0.2s;
+}
+input.floatright:hover {
+    background: var(--teal2) !important;
+    transform: scale(1.05);
+}
+
+
+
+/*ALERTS*/ .alert, .alert-warning, .alert-danger {
+    background: var(--black1);
+    color: var(--light1);
+    border: var(--border1);
+    box-shadow: var(--glow3);
+}
+
+
+
+/*BIG HEADER*/ h1 {
+    color: var(--light1);
+    text-shadow: 0px 0px 5px #000, 0px 0px 10px #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Metamorphous;
+}
+/*SMALL HEADER*/ h3 {
+    color: var(--light1) !important;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+
+/*RIGHT NAVBAR*/
+/*HEADERS*/
+.sidebar h3 {
+    color: var(--light1) !important;
+    text-shadow: 0px 0px 5px #000, 0px 0px 10px #000;
+    font-size: 20px;
+    transition: 0.2s;
+    font-family: Metamorphous;
+}
+.sidebar h3:hover {
+    color: var(--light2) !important;
+    transform: scale(1.03);
+}
+/*PANELS*/ .panel {
+    background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealpattern.png) repeat center center, linear-gradient(45deg,var(--black1),var(--black3)) !important;
+    box-shadow: var(--glow3) !important;
+    border: var(--border1) !important;
+}
+/*PANEL TEXT*/ .panel-body {
+    color: var(--light1);
+    font-size: 14px;
+}
+
+
+
+/*ENERGY BARS*/
+/*BG*/ .progress {
+    background: var(--black1);
+    text-shadow: 0px 0px 5px #000;
+    border-radius: 5px !important;
+}
+/*TEXT*/ .progress div {
+    color: var(--light1);
+}
+/*IMPRESSION*/ .progress-bar {
+    background: linear-gradient(to right,var(--teal3),var(--teal1) 200px);
+}
+/*ENERGY*/ .progress-bar-warning {
+    background: linear-gradient(to right,var(--teal3),var(--teal1) 200px);
+}
+/*HUNGER*/ .progress-bar-danger {
+    background: linear-gradient(to right,var(--teal3),var(--teal1) 200px);
+}
+/*EXPERIENCE*/ .progress-bar-success {
+    background: linear-gradient(to right,var(--teal3),var(--teal1) 200px);
+}
+
+
+
+/*SWITCH ACCOUNT BUTTON*/ button.button {
+    background: var(--black2);
+    color: var(--light1);
+    text-shadow: none;
+    box-shadow: var(--glow3);
+    border: var(--border1);
+    transition: 0.2s;
+}
+button.button:hover {
+    background: var(--black3);
+    color: var(--light1);
+    text-shadow: none;
+    box-shadow: var(--glow3);
+    border: var(--border1);
+    transform: scale(1.05) !important;
+}
+
+/*BUGBOX BUTTON*/ a.btn.btn-default.button {
+    background: var(--black2);
+    color: var(--light1) !important;
+    font-weight: bold !important;
+    text-shadow: none;
+    box-shadow: var(--glow3);
+    border: var(--border1);
+}
+
+a.btn.btn-default.button:hover {
+    transform: scale(1.05) !important;
+    background: var(--black3);
+}
+
+
+
+/*CHAT*/
+/*BORDER*/ div#chatMessageContainer {
+    border: var(--border1) !important;
+    box-shadow: var(--glow3) !important;
+}
+/*CHANNEL BUTTON*/ button#label_currentChannel {
+    background: var(--black1) !important;
+    color: var(--light2) !important;
+    border: none !important;
+    box-shadow: var(--glow3) !important;
+}
+/*ODD*/ .s-chat-message:nth-child(odd) {
+    background: var(--black1) !important;
+    color: var(--light1) !important;
+    border: none !important;
+}
+/*EVEN*/ .s-chat-message:nth-child(even) {
+    background: var(--black2) !important;
+    color: var(--light1) !important;
+    border: none !important;
+}
+/*PINNED*/ .s-chat-message__pinned {
+    background: var(--black1) !important;
+    color: var(--light2) !important;
+    border-bottom: solid 1px var(--teal2) !important;
+}
+/*TIMESTAMPS*/ .s-chat-message_timestamp {
+    color: var(--light3) !important;
+}
+
+
+
+/*LION INFO TABLE*/
+/*PANEL*/ .table {
+    background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealpattern.png) repeat center center, linear-gradient(var(--black1),var(--black3));
+    border-radius: 5px !important;
+    border: var(--border1);
+    box-shadow: var(--glow3);
+    border-collapse: separate;
+}
+/*HEADERS*/ .top, .bottom, th {
+    background: var(--black1) !important;
+    border-radius: 5px !important;
+}
+
+/*BOTTOM OF PLAYER BOX*/ .right_odd {
+    background: var(--black1) !important}
+
+/*NO UNDERLINE*/ td.bottom a {text-decoration: none !important;}
+/*LEFT*/ .inner-table .left {
+    background: var(--teal3) !important;
+    box-shadow: 0px 0px 5px #000;
+}
+/*RIGHT*/ .inner-table .right {
+    background: linear-gradient(to right,var(--teal2),var(--teal1)) !important;
+    box-shadow: 1px 0px 5px #000;
+}
+/*LION IMAGE*/ div#lion_image {
+    border-radius: 5px !important;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 9px;
+    transition: 0.2s;
+    box-shadow: var(--glow3);
+}
+div#lion_image:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*PLAYER ICON*/ table#player img {
+	border-radius: 5px !important;
+	overflow: hidden
+}
+
+
+
+/*CAVES*/
+/*BG*/ .cave-grid, .mound-grid {
+    background: var(--black1);
+    border: var(--border1) !important;
+    box-shadow: var(--glow3);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+/*HOVER*/ .cave-grid:hover, .mound-grid:hover {
+    background: var(--black2);
+    transform: scale(1.03);
+}
+/*UNSORTED IMG*/ img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/gemdioptase.png') !important;
+    width: 80px;}
+/*NESTING IMG*/ img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_auroramarkings.png') !important;
+    width: 80px;}
+/*OVERVIEW IMG*/ img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/gem_aquamarine.png') !important;
+    width: 80px;}
+/*CAVES IMG*/ img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/tealcave.jpg') !important;
+    object-fit: cover;
+    height: 80px;
+    object-position: center;}
+/*MOUNDS IMG*/ .mound-grid img {display: none;}
+
+
+
+/*FAPA*/ .feature {
+    background: var(--black1) !important;
+    border: var(--border1) !important;
+    box-shadow: var(--glow4);
+}
+/*SPARRING*/ .right_odd {
+    background: var(--black1) !important;
+}
+
+
+
+/*DYNASTY*/ div.left {
+    background: var(--black1);
+    border: var(--border1);
+    box-shadow: var(--glow3);
+    transition: 0.2s;
+}
+/*DYNASTY HOVER*/ div.left:hover {
+    background: var(--black2);
+    transform: scale(1.03);
+}
+/*MAKE DYNASTY ONE ROW*/ .dynastylist {width: 20%;}
+
+
+
+/*EDIT YOUR DETAILS*/
+/*LEFT*/ .table .left {
+    background: var(--black1);
+}
+/*RIGHT*/ input, select, textarea {
+	background: var(--black3) !important;
+    color: var(--light1) !important;
+	border: none !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important
+}
+
+
+
+/*SITE FOOTER*/ div.col-xs-10 {
+    color: var(--light1);
+}
+
+
+
+
+/*COMMENT BOX*/
+/*MAIN*/ #commentBox {
+    background: var(--black1);
+    border: var(--border1) !important;
+    box-shadow: var(--glow3);
+    scrollbar-color: var(--teal2) var(--teal3);
+}
+/*COMMENTS, EVEN*/ div.comment:nth-child(even) {
+    background: var(--black2) !important;
+    border-bottom: solid 1px var(--teal3);
+}
+/*COMMENTS, ODD*/ div.comment:nth-child(odd) {
+    background: var(--black1) !important;
+    border-bottom: solid 1px var(--teal3);
+}
+/*MAKE COMMENT BAR*/ div#makeComment {
+    background: var(--black1);
+    border: var(--border1);
+    box-shadow: var(--glow4);
+    border-radius: 5px;
+}
+/*INPUT*/ input#comment {
+    margin: 5px;
+    background: linear-gradient(to right,var(--teal3),var(--black2)) !important;
+}
+/*POST BUTTON*/ input#postComment {
+    background: var(--teal3) !important;
+}
+/*TIMESTAMPS*/ small.text-muted {
+    color: var(--teal1);
+}
+/*X BUTTON*/ input[type="button"].bad {
+    background: var(--teal3) !important;
+    color: var(--teal1) !important;
+    text-shadow: none;
+}
+/*HEADER*/ #commentBox::before {
+    content: "COMMENTS";
+    background: var(--black1);
+    border-bottom: 2px solid var(--teal3);
+    color: var(--teal1);
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding-top: 10px;
+    top: 0px;
+}
+
+
+/*HIDE WISHLIST/GIFT/ETC ICONS*/
+img[src$="icon_den_wishlist.png"] {display: none;}
+img[src$="icon_den_friend.png"] {display: none;}
+img[src$="icon_den_message.png"] {display: none;}
+img[src$="icon_den_gift.png"] {display: none;}
+img[src$="icon_den_trade.png"] {display: none;}
+img[src$="icon_den_viewtrade.png"] {display: none;}
+img[src$="icon_den_block.png"] {display: none;}
+/*HIDDEN :|: DIVIDERS*/ span.text-muted {visibility: hidden;margin: -5px;}
+/*REMOVE PLAYER BOX DIVIDER*/ tbody hr {display:none;}
+
+
+
+/*BOX CONTAINER*/ .boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
+/*BOX SPECIFIC ADJUSTMENTS*/
+/*DIVIDER*/ .boxcontainer hr {
+    margin: 5px;
+    border-top: solid 2px var(--teal3);
+    width: 70%;}
+/*H1*/ .boxcontainer h1 {font-family:Metamorphous; font-size: 35px !important; margin: 0px;}
+/*H2*/ .boxcontainer h2 {font-family:Metamorphous; font-size: 25px !important; margin: 0px;}
+/*H3*/ .boxcontainer h3 {font-family:Metamorphous; font-size: 20px !important; margin: 0px;}
+
+/*BOX 1*/ .box1 {
+	float: left;
+	background: linear-gradient(var(--black1),var(--black2));
+	color: var(--light1);
+	padding: 10px;
+	border: var(--border1);
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+    max-height: 300px;
+	width: 80%;
+	overflow: auto;
+    box-shadow: var(--glow3);
+    scrollbar-color: var(--teal2) var(--teal3);
+}
+/*BOX 2*/ .box2 {
+	float: left;
+	background: linear-gradient(var(--black1),var(--black2));
+	color: var(--light1);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+    max-height: 200px;
+	width: 40%;
+	overflow: auto;
+    border: var(--border1);
+    box-shadow: var(--glow3);
+    scrollbar-color: var(--teal2) var(--teal3);
+}
+/*BOX 3*/ .box3 {
+	float: left;
+	background: linear-gradient(var(--black1),var(--black2));
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+    max-height: 200px;
+	width: 60%;
+	overflow: auto;
+    border: var(--border1);
+    box-shadow: var(--glow3);
+    scrollbar-color: var(--teal2) var(--teal3);
+}
+
+.fireflies {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+.fireflies span {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  animation:
+    flicker 4s ease-in-out infinite,
+    driftUp 28s linear infinite;
+  filter: blur(0.3px);
+}
+.fireflies span:nth-child(3n) {
+  background: radial-gradient(circle,
+    #fff 0%,
+    #b7f8ff 42%,
+    transparent 70%);
+  box-shadow:
+    0 0 6px rgba(152,244,255,0.65),
+    0 0 12px rgba(125,211,251,0.4);
+}
+.fireflies span:nth-child(3n + 2) {
+  background: radial-gradient(circle,
+    #fff 0%,
+    #b7f8ff 40%,
+    transparent 70%);
+  box-shadow:
+    0 0 6px rgba(149,157,134,0.55),
+    0 0 12px rgba(130,141,113,0.35);
+}
+.fireflies span:nth-child(5n) {
+  width: 4px;
+  height: 4px;
+}
+.fireflies span:nth-child(5n + 1) {
+  width: 6px;
+  height: 6px;
+}
+.fireflies span:nth-child(5n + 2) {
+  width: 8px;
+  height: 8px;
+}
+.fireflies span:nth-child(5n + 3) {
+  width: 5px;
+  height: 5px;
+}
+.fireflies span:nth-child(5n + 4) {
+  width: 7px;
+  height: 7px;
+}
+.fireflies span:nth-child(4n) {
+  animation-duration: 6s, 50s;
+}
+.fireflies span:nth-child(4n + 1) {
+  animation-duration: 4s, 32s;
+}
+.fireflies span:nth-child(4n + 2) {
+  animation-duration: 3s, 18s;
+}
+.fireflies span:nth-child(4n + 3) {
+  animation-duration: 7s, 60s;
+}
+.fireflies span:nth-child(odd) {
+  animation-name: flicker, driftLeft;
+}
+.fireflies span:nth-child(even) {
+  animation-name: flicker, driftRight;
+}
+.fireflies span:nth-child(3n) {
+  animation-name: flicker, driftUp;
+}
+.fireflies span:nth-child(6n) {
+  animation-name: flicker, driftWander;
+}
+.fireflies span:nth-child(1)  { left: 10%; top: 20%; }
+.fireflies span:nth-child(2)  { left: 25%; top: 35%; }
+.fireflies span:nth-child(3)  { left: 40%; top: 15%; }
+.fireflies span:nth-child(4)  { left: 55%; top: 40%; }
+.fireflies span:nth-child(5)  { left: 70%; top: 25%; }
+.fireflies span:nth-child(6)  { left: 85%; top: 50%; }
+.fireflies span:nth-child(7)  { left: 5%;  top: 60%; }
+.fireflies span:nth-child(8)  { left: 20%; top: 75%; }
+.fireflies span:nth-child(9)  { left: 35%; top: 55%; }
+.fireflies span:nth-child(10) { left: 5%; top: 70%; }
+.fireflies span:nth-child(11) { left: 65%; top: 85%; }
+.fireflies span:nth-child(12) { left: 80%; top: 65%; }
+.fireflies span:nth-child(13) { left: 15%; top: 10%; }
+.fireflies span:nth-child(14) { left: 30%; top: 5%; }
+.fireflies span:nth-child(15) { left: 45%; top: 30%; }
+.fireflies span:nth-child(16) { left: 60%; top: 15%; }
+.fireflies span:nth-child(17) { left: 10%; top: 40%; }
+.fireflies span:nth-child(18) { left: 90%; top: 20%; }
+.fireflies span:nth-child(19) { left: 12%; top: 50%; }
+.fireflies span:nth-child(20) { left: 28%; top: 65%; }
+.fireflies span:nth-child(21) { left: 43%; top: 45%; }
+.fireflies span:nth-child(22) { left: 58%; top: 60%; }
+.fireflies span:nth-child(23) { left: 73%; top: 75%; }
+.fireflies span:nth-child(24) { left: 16%; top: 55%; }
+.fireflies span:nth-child(25) { left: 8%; top: 80%; }
+.fireflies span:nth-child(26) { left: 23%; top: 85%; }
+.fireflies span:nth-child(27) { left: 38%; top: 70%; }
+.fireflies span:nth-child(28) { left: 53%; top: 90%; }
+.fireflies span:nth-child(29) { left: 11%; top: 80%; }
+.fireflies span:nth-child(30) { left: 5%; top: 95%; }
+@keyframes flicker {
+  0%, 100% { opacity: 0; }
+  40% { opacity: 0.9; }
+  60% { opacity: 0.4; }
+}
+@keyframes driftUp {
+  to { transform: translate(0, -150px); }
+}
+@keyframes driftLeft {
+  to { transform: translate(-120px, -80px); }
+}
+@keyframes driftRight {
+  to { transform: translate(120px, -70px); }
+}
+@keyframes driftWander {
+  25% { transform: translate(-60px, -30px); }
+  50% { transform: translate(70px, -50px); }
+  75% { transform: translate(-40px, -80px); }
+  100% { transform: translate(0, -120px); }
+}
