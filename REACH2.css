@@ -659,7 +659,7 @@ background-size: cover;}}
 .boxwrapper b {
     color: var(--text2);
 }
-/*CAVE OVERHAUL - BY FELIDAZE #114852*/
+//*CAVE OVERHAUL - BY FELIDAZE #114852*/
 /*THIS CODE IS FREE TO USE, EDIT, AND REFERENCE, AS LONG AS CREDIT IS GIVEN*/
 /*I CANNOT HELP WITH FIXING/EDITING IT IF YOU RUN INTO ISSUES BECAUSE I BARELY REMEMBER HOW IT WORKS --FELID*/
 #fraOrganizationBlock {
@@ -672,7 +672,7 @@ background-size: cover;}}
 }
 /*UNSORTED*/ #fraOrganizationBlock > div:nth-child(1) > a > div {
     width: 150px;
-    height: 110px;
+    height: 100px;
     color: var(--text2);
     padding: 10px;
 }
@@ -709,8 +709,14 @@ background-size: cover;}}
     height: 40px !important;
     overflow: hidden !important;
     transition: 0.2s; 
+    width: 97%;
     display: block;
 }
+
+#fraCaveList > table:hover {
+    width: 100%;
+}
+
 
 /*KILL EXTRA UNSORTED BUTTON*/ #pride:nth-child(7) {
     display: none;
@@ -722,6 +728,7 @@ background-size: cover;}}
 
 /*PUTS CAVES ON THE GRID*/ #fraCaveList {
     grid-area: 1 / 2 / 4 / 3;
+    text-align: left;
 }
 
 /*UNSORTED IMG*/ img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
