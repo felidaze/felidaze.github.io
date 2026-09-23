@@ -659,7 +659,7 @@ background-size: cover;}}
 .boxwrapper b {
     color: var(--text2);
 }
-//*CAVE OVERHAUL - BY FELIDAZE #114852*/
+/*CAVE OVERHAUL - BY FELIDAZE #114852*/
 /*THIS CODE IS FREE TO USE, EDIT, AND REFERENCE, AS LONG AS CREDIT IS GIVEN*/
 /*I CANNOT HELP WITH FIXING/EDITING IT IF YOU RUN INTO ISSUES BECAUSE I BARELY REMEMBER HOW IT WORKS --FELID*/
 #fraOrganizationBlock {
@@ -716,7 +716,6 @@ background-size: cover;}}
 #fraCaveList > table:hover {
     width: 100%;
 }
-
 
 /*KILL EXTRA UNSORTED BUTTON*/ #pride:nth-child(7) {
     display: none;
